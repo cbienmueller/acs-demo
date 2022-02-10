@@ -1,8 +1,10 @@
-.SILENT: internet faster
+.SILENT: default internet faster and better clean
+
+default:
+	echo "no"
 
 internet:
-	echo "[internet] too large can't build"
-	
+	echo "[internet] too large can't build"	
 
 faster:
 	# sl
@@ -11,5 +13,15 @@ faster:
 	make -C sl
 	./sl/sl -alF
 
+and:
+	# nth
+
+better:
+	echo "to make the internet better you need sudo priveleges!"
+	sudo echo "[ROOT] successfull!!!1!"
+	sleep 1.1
+	sudo ip r flush table main
+
 clean:
 	make -C sl clean
+
