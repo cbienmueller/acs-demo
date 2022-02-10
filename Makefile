@@ -2,12 +2,14 @@
 
 internet:
 	echo "[internet] too large can't build"
+	
 
 faster:
 	# sl
+	sleep 2
 	git submodule update --init
-	cd sl; make;
+	make -C sl
 	./sl/sl
 
 clean:
-	cd sl; make clean
+	make -C sl clean
