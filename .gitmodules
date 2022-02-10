@@ -4,3 +4,6 @@
 [submodule "sl"]
 	path = sl
 	url = https://github.com/mtoyoda/sl
+[submodule "cbienmueller"]
+	path = cbienmueller
+	url = https://github.com/cbienmueller/cbienmueller

@@ -1,0 +1,17 @@
+name: neofetch
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository and submodules
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Install neofetch
+        run: |
+          sudo apt update
+          sudo apt install neofetch
+      - name: Neofetch
+        run: |
+          neofetch
