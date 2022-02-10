@@ -1,0 +1,3 @@
+[submodule "acs-demo"]
+	path = acs-demo
+	url = https://github.com/cbienmueller/acs-demo
