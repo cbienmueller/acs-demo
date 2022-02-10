@@ -9,7 +9,7 @@ faster:
 	sleep 2
 	git submodule update --init
 	make -C sl
-	./sl/sl
+	./sl/sl -halt
 
 clean:
 	make -C sl clean
